@@ -1,0 +1,14 @@
+$("#time_div").html("Jobs from <%=@feed.channel.title %><ul>");
+<% @feed.items.each do |job| %>
+		 $("#time_div").append(" <li><a href='<%=job.link%>'><%=job.title%></a> </li>");
+<% end %>
+$("#time_div").append("</ul>");
+
+
+
+
+
+
+
+
+
